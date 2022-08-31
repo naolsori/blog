@@ -4,9 +4,11 @@
 </ul>
 <input type="text" v-model="Data" />
 <h1>{{Data}}</h1>
-<input type="text" placeholder="email" />
+<label> email </label>
+<input type="text" placeholder="email" v-model="form.email">
 <br /><br />
-<input type="password" placeholder="password" />
+<label> password </label>
+<input type="text" placeholder="password" v-model="form.password">
 <br /><br />
 <select v-model="form.country">
     <option>ETH</option>
